@@ -140,7 +140,7 @@ public class ArticleDetailFragment extends Fragment implements
 
          */
 
-        mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
+        //mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
        // mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
         mStatusBarColorDrawable = new ColorDrawable(0);
@@ -159,7 +159,7 @@ public class ArticleDetailFragment extends Fragment implements
        // updateStatusBar();
         return mRootView;
     }
-
+/*
     private void updateStatusBar() {
         int color = 0;
         if (mPhotoView != null && mTopInset != 0 && mScrollY > 0) {
@@ -174,7 +174,7 @@ public class ArticleDetailFragment extends Fragment implements
         mStatusBarColorDrawable.setColor(color);
         mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
     }
-
+*/
     static float progress(float v, float min, float max) {
         return constrain((v - min) / (max - min), 0, 1);
     }

@@ -5,34 +5,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!--setting up  an app bar -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:theme="@style/ToolBarTheme"
+        android:elevation="@dimen/appbar_elevation">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_detail"
             android:layout_width = "match_parent"
             android:layout_height = "?attr/actionBarSize"
             android:background="@color/primary"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             >
-            <!--
-            <ImageButton
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                android:id="@+id/action_up"
-                android:layout_width="56dp"
-                android:layout_height="?actionBarSize"
-                android:background="?selectableItemBackgroundBorderless"
-                android:contentDescription="@string/up"
-                android:src="@drawable/ic_arrow_back" />
-                -->
-
-            <ImageView
-                android:id="@+id/photo"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                />
 
         </android.support.v7.widget.Toolbar>
-
+    </android.support.design.widget.AppBarLayout>
 
 
     <android.support.v4.view.ViewPager
